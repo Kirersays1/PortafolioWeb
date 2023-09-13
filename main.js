@@ -1,14 +1,14 @@
-import './style.css';
-import * as THREE from 'three';
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
-import {GLTFLoader} from 'three/examples/jsm/loaders/GLTFLoader.js';
+import "./style.css";
+import * as THREE from "three";
+import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
+import {GLTFLoader} from "three/examples/jsm/loaders/GLTFLoader.js";
 
 // Variables
 const scene = new THREE.Scene(); //Escena
 const gtlfLoader = new GLTFLoader(); //Loader de formato Gltf
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
 const renderer = new THREE.WebGLRenderer({
-  canvas: document.querySelector('#bg'),
+  canvas: document.querySelector("#bg"),
 });
 
 renderer.setPixelRatio(window.devicePixelRatio);
@@ -22,7 +22,7 @@ renderer.render(scene, camera);
 //perro
 
 let perro;
-gtlfLoader.load('./gltf/scene.gltf',(gltf) => {
+gtlfLoader.load("/gltf/scene.gltf",(gltf) => {
 perro= gltf;
 
   gltf.scene.rotation.y = Math.PI /8;
@@ -65,13 +65,13 @@ Array(200).fill().forEach(addStar);
 
 // Background
 
-const tribaltexture = new THREE.TextureLoader().load('tribal.jpg');
+const tribaltexture = new THREE.TextureLoader().load("tribal.jpg");
 scene.background = tribaltexture;
 
 // Moon
 
-const moonTexture = new THREE.TextureLoader().load('moon.jpg');
-const normalTexture = new THREE.TextureLoader().load('normal.jpg');
+const moonTexture = new THREE.TextureLoader().load("moon.jpg");
+const normalTexture = new THREE.TextureLoader().load("normal.jpg");
 
 const moon = new THREE.Mesh(
   new THREE.SphereGeometry(3, 32, 32),
