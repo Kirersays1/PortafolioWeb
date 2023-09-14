@@ -22,7 +22,7 @@ renderer.render(scene, camera);
 //perro
 
 let perro;
-gtlfLoader.load("gltf/scene.gltf",(gltf) => {
+gtlfLoader.load("/gltf/scene.gltf",(gltf) => {
 perro= gltf;
 
   gltf.scene.rotation.y = Math.PI /8;
@@ -65,7 +65,7 @@ Array(200).fill().forEach(addStar);
 
 // Background
 
-const tribaltexture = new THREE.TextureLoader().load("tribal.jpg");
+const tribaltexture = new THREE.TextureLoader().load("/tribal.jpg");
 scene.background = tribaltexture;
 
 // Moon
