@@ -3,6 +3,7 @@ import { ProjectCard } from "./ProjectCard";
 import projImg1 from "../assets/img/siga.png";
 import projImg2 from "../assets/img/piggy.png";
 import projImg3 from "../assets/img/blockrunner.png";
+import projImg4 from "../assets/img/PokeReactshot.png";
 import "animate.css";
 
 export const Projects = () => {
@@ -32,6 +33,14 @@ export const Projects = () => {
       role: "Fullstack",
       link: "https://play.google.com/store/apps/details?id=com.Kirer.Blockrunners&pcampaignid=web_share",
       tool: "https://img.shields.io/badge/C%23-Unity-white",
+    },
+    {
+      title: "PokeReact",
+      description: "Pokedex made in React Native Cli",
+      imgUrl: projImg4,
+      role: "Fullstack",
+      link: "",
+      tool: "https://img.shields.io/badge/Js-React_Native-blue",
     },
   ];
 
