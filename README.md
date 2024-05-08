@@ -1,8 +1,42 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Portfolio Web
+This repo is dedicated for the updates of my Web Portofolio, it includes a litle bit about its components and most important, intructions to deploy to gh-pages.
 
-Currently, two official plugins are available:
+### Table of content
+- [Installation](#Installation)
+- [Deployment](#Deployment)
+- [Documentation](#Documentation)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## Installation
+
+Install my-project with npm
+
+```bash
+cd portfolio
+npm i   
+```
+    
+## Deployment
+To config the url of the page , you need to modify "base" in vite.config.js
+All comands are config in package.json
+
+To run locally :
+```bash
+  npm run dev
+```
+To deploy to gh-pages: 
+```bash
+  npm run deploy
+```
+
+
+## Documentation
+
+[Documentation](https://linktodocumentation)
+
+
+## Demo
+
+https://kirersays1.github.io/portfolio/
+
